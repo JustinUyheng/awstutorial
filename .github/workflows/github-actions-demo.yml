@@ -8,4 +8,4 @@ jobs:
         uses: actions/checkout@v3
       - run: npm install
       - run: npm run build
-      - run: AWS_ACCESS_KEY_ID=AKIA2XY3AIDU76XW7KVF AWS_SECRET_ACCESS_KEY=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 aws s3 sync build s3://awstutorial-2
+      - run: AWS_ACCESS_KEY_ID=AKIA2XY3AIDU76XW7KVF AWS_SECRET_ACCESS_KEY=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 AWS_DEFAULT_REGION=ap-southeast-1 aws s3 sync build s3://awstutorial-2
